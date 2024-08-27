@@ -28,12 +28,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation group: 'com.mysql', name: 'mysql-connector-j', version: '8.3.0'
+	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-//	runtimeOnly 'mysql:mysql-connector-java'
 }
 
 tasks.named('test') {
