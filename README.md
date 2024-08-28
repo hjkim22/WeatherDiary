@@ -43,4 +43,4 @@
 ## 📜 API Documentation
 
 - **Swagger UI**를 통해 API 문서를 확인
-  - [Swagger UI](http://localhost:8080/swagger-ui.html)
+  - [Swagger UI](http://localhost:8080/swagger-ui/index.html)
