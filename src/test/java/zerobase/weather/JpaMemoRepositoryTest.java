@@ -3,7 +3,6 @@ package zerobase.weather;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 import zerobase.weather.domain.Memo;
 import zerobase.weather.repository.JpaMemoRepository;
@@ -12,14 +11,14 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @SpringBootTest
 @Transactional
 public class JpaMemoRepositoryTest {
 
     @Autowired
-    JpaRepository jpaRepository;
+    JpaMemoRepository jpaRepository;
     @Autowired
     private JpaMemoRepository jpaMemoRepository;
 
@@ -33,7 +32,8 @@ public class JpaMemoRepositoryTest {
 
         //then
         List<Memo> memoList = jpaMemoRepository.findAll();
-        assertTrue(memoList.size() > 0);
+//        assertTrue(memoList.size() > 0);
+        assertFalse(memoList.isEmpty());
     }
 
     @Test
