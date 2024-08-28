@@ -2,7 +2,7 @@
 
 > OpenWeatherMap API를 이용하여 날씨 데이터를 가져오고 사용자가 일기를 작성하고 관리할 수 있는 프로젝트
 
-## 🛠️ 기술 스택
+## 🛠️ Tech Stack
 
 - **Java**: `17`
 - **Spring Boot**: `3.3.2`
@@ -18,7 +18,7 @@
 ## ⛓️ 프로젝트 기능
 
 - **매일 새벽 01시에 OpenWeatherMap API에서 날씨 데이터를 받아와 DB에 저장**  
-  매일 정해진 시간에 날씨 데이터를 자동으로 업데이트하여 최신 정보를 유지.
+  매일 정해진 시간에 날씨 데이터를 자동으로 업데이트하여 최신 정보를 유지
 
 
 - **일기 생성**  
@@ -40,8 +40,7 @@
 - **일기 삭제**  
   불필요한 일기를 삭제
 
----
-```
-git clone https://github.com/yourusername/WeatherDiary.git
-```
-http://localhost:8080/swagger-ui.html
+## 📜 API Documentation
+
+- **Swagger UI**를 통해 API 문서를 확인
+  - [Swagger UI](http://localhost:8080/swagger-ui.html)
